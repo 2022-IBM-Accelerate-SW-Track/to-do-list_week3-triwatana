@@ -8,9 +8,31 @@
   padding-top: 100px;
 }
 
+@keyframes color {
+  0% {
+    background: #33cccc;
+  }
+  20% {
+    background: #33cc36;
+  }
+  40% {
+    background: #b8cc33;
+  }
+  60% {
+    background: #fcca00;
+  }
+  80% {
+    background: #33cc36;
+  }
+  100% {
+    background: #33cccc;
+  }
+}
+
 .left {
   left: 0;
-  background-color: #0f62fe;
+  background: #33cccc; /* Fallback */
+  animation: color 9s infinite linear;
 }
 
 .right {
@@ -22,7 +44,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  text-align: centers;
+  text-align: center;
 }
 
 .name_title {
@@ -37,6 +59,8 @@
 }
 
 .profile_image {
-  width: 500px;
+  width: 400px;
   height: auto;
+  border: 5px solid #000000;
+  border-radius: 50%;
 }
